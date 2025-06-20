@@ -4,7 +4,7 @@ metadata:
   name: arc-k8s-demo
   namespace: cluster-config
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: arc-k8s-demo
@@ -30,7 +30,7 @@ spec:
         resources:
           requests:
             memory: "50Mi"
-            cpu: "20m"
+            cpu: "500m"
           limits:
             memory: "256Mi"
             cpu: "500m"
